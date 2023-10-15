@@ -32,8 +32,7 @@ Because the automatic address is generated in public there is no need to have %P
 
 
 
-The start point of the program for example "index.js" should be inserted inside the body of HTML page
-اسکریپت مربوط به فایل شروع برنامه به صورت ماژول درون فایل index.html باید قرار بگیرد
+The start point of the program for example "index.js" should be inserted inside the body of the HTML page
 
 	```html
  <script type="module" src="/src/index.tsx"></script>
@@ -56,11 +55,10 @@ https://github.com/muhamadzolfaghari/migrate-cra-to-vite/blob/master/package.jso
 
 6- How to access the environment by changing the variable from process to import.meta
 
-حالت قبلی
-
+previous
 process.env.REACT_APP_VARIABLE
-حالت چدید
 
+new import
 import.meta.env.REACT_APP_VARIABLE
 
 A benefit of Vite is reloading the app after the environment changes
